@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius To Fahrenheit Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="container mx-auto">
+    <header>
+        <h1 class="text-4xl font-semibold text-center bg-fuchsia-500 text-white py-6 roundeed rounded-2xl">Celsius To Fahrenheit Calculator</h1>
+    </header>
+    <main class="my-5">
+        <section class=" text-center bg-blue-400 text-white py-6 roundeed rounded-2xl h-40">
+            <h1 class="text-4xl font-semibold uppercase">Result </h1>
+            <h2 id="result" class=" inline-block px-4 py-1 rounded-3xl my-3 text-3xl font-semibold"></h2>
+        </section>
+        <section class="mt-5 py-10 bg-green-300  roundeed rounded-2xl">
+            <div class="flex items-center justify-center">
+                <div class="flex justify-center items-center">
+                    <label class="text-white text-2xl font-bold" for="celsiusInput">Celsius:</label>
+                    <input id="celsiusInput" type="number" placeholder="Input Celsius" class="ml-2 input input-bordered input-accent w-full max-w-xs" />
+                    <label class="text-white text-2xl font-bold" for="celsiusInput">°C</label>
+                </div>
+            </div>
+            <div class="mt-4 flex justify-center">
+                <button class="ml-2 btn btn-error text-white" id="submit">Submit</button>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p class="text-lg font-semibold text-center bg-fuchsia-500 text-white py-3 roundeed rounded-2xl">© Shahadat 2022</p>
+    </footer>
+    <script src="scriptl.js"></script>
+</body>
+
+</html>
